@@ -1,0 +1,45 @@
+2024-07-31T15:34:41.057+03:00  INFO 28179 --- [banking_app] [main] c.b.b.BankingAppApplicationTests         : Starting BankingAppApplicationTests using Java 17.0.12 with PID 28179 (started by jamila in /home/jamila/Downloads/banking_app)
+2024-07-31T15:34:41.075+03:00 DEBUG 28179 --- [banking_app] [main] c.b.b.BankingAppApplicationTests         : Running with Spring Boot v3.3.2, Spring v6.1.11
+2024-07-31T15:34:41.080+03:00  INFO 28179 --- [banking_app] [main] c.b.b.BankingAppApplicationTests         : No active profile set, falling back to 1 default profile: "default"
+2024-07-31T15:34:43.934+03:00  INFO 28179 --- [banking_app] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-07-31T15:34:44.212+03:00  INFO 28179 --- [banking_app] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 252 ms. Found 8 JPA repository interfaces.
+2024-07-31T15:34:45.706+03:00  INFO 28179 --- [banking_app] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-07-31T15:34:45.934+03:00  INFO 28179 --- [banking_app] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-07-31T15:34:46.072+03:00  INFO 28179 --- [banking_app] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-07-31T15:34:47.119+03:00  INFO 28179 --- [banking_app] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-07-31T15:34:47.214+03:00  INFO 28179 --- [banking_app] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-07-31T15:34:48.396+03:00  INFO 28179 --- [banking_app] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@336e3be2
+2024-07-31T15:34:48.406+03:00  INFO 28179 --- [banking_app] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-07-31T15:34:52.542+03:00  INFO 28179 --- [banking_app] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-07-31T15:34:52.746+03:00  INFO 28179 --- [banking_app] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-07-31T15:34:55.404+03:00  WARN 28179 --- [banking_app] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-07-31T15:35:01.844+03:00  INFO 28179 --- [banking_app] [main] c.b.b.BankingAppApplicationTests         : Started BankingAppApplicationTests in 21.88 seconds (process running for 25.032)
+2024-07-31T15:35:03.827+03:00  INFO 28179 --- [banking_app] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-07-31T15:35:03.846+03:00  INFO 28179 --- [banking_app] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-07-31T15:35:03.896+03:00  INFO 28179 --- [banking_app] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-07-31T15:35:48.650+03:00  INFO 28587 --- [banking_app] [main] c.b.banking_app.BankingAppApplication    : Starting BankingAppApplication using Java 17.0.12 with PID 28587 (/home/jamila/Downloads/banking_app/target/classes started by jamila in /home/jamila/Downloads/banking_app)
+2024-07-31T15:35:48.656+03:00 DEBUG 28587 --- [banking_app] [main] c.b.banking_app.BankingAppApplication    : Running with Spring Boot v3.3.2, Spring v6.1.11
+2024-07-31T15:35:48.659+03:00  INFO 28587 --- [banking_app] [main] c.b.banking_app.BankingAppApplication    : No active profile set, falling back to 1 default profile: "default"
+2024-07-31T15:35:51.732+03:00  INFO 28587 --- [banking_app] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-07-31T15:35:52.161+03:00  INFO 28587 --- [banking_app] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 393 ms. Found 8 JPA repository interfaces.
+2024-07-31T15:35:54.219+03:00  INFO 28587 --- [banking_app] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9090 (http)
+2024-07-31T15:35:54.257+03:00  INFO 28587 --- [banking_app] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-07-31T15:35:54.259+03:00  INFO 28587 --- [banking_app] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-07-31T15:35:54.457+03:00  INFO 28587 --- [banking_app] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-07-31T15:35:54.459+03:00  INFO 28587 --- [banking_app] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 5648 ms
+2024-07-31T15:35:54.895+03:00  INFO 28587 --- [banking_app] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-07-31T15:35:55.023+03:00  INFO 28587 --- [banking_app] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-07-31T15:35:55.162+03:00  INFO 28587 --- [banking_app] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-07-31T15:35:56.135+03:00  INFO 28587 --- [banking_app] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-07-31T15:35:56.216+03:00  INFO 28587 --- [banking_app] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-07-31T15:35:57.107+03:00  INFO 28587 --- [banking_app] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@660296d5
+2024-07-31T15:35:57.112+03:00  INFO 28587 --- [banking_app] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-07-31T15:36:00.526+03:00  INFO 28587 --- [banking_app] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-07-31T15:36:00.661+03:00  INFO 28587 --- [banking_app] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-07-31T15:36:02.592+03:00  WARN 28587 --- [banking_app] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-07-31T15:36:04.682+03:00  INFO 28587 --- [banking_app] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9090 (http) with context path '/'
+2024-07-31T15:36:04.718+03:00  INFO 28587 --- [banking_app] [main] c.b.banking_app.BankingAppApplication    : Started BankingAppApplication in 17.427 seconds (process running for 18.317)
+2024-07-31T15:37:02.935+03:00  INFO 28587 --- [banking_app] [http-nio-9090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-07-31T15:37:02.936+03:00  INFO 28587 --- [banking_app] [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-07-31T15:37:02.941+03:00  INFO 28587 --- [banking_app] [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2024-07-31T15:37:05.787+03:00  INFO 28587 --- [banking_app] [http-nio-9090-exec-7] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 1548 ms
