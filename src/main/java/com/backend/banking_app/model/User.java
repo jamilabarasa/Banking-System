@@ -13,6 +13,7 @@ import jakarta.validation.constraints.NotNull;
 
 import java.time.LocalDateTime;
 import java.util.Date;
+import java.util.Set;
 
 
 @Data
@@ -50,16 +51,12 @@ public class User {
 
     private String address;
 
-    @NotNull(message = "User Type is required")
     @Enumerated(EnumType.STRING)
     private UserType userType;
 
     @Column(updatable = false)
     private LocalDateTime createdAt;
     private LocalDateTime updatedAt;
-
-    @Enumerated(EnumType.STRING)
-    private Authority authority;
 
     @PrePersist
     protected void onCreate() {
@@ -71,12 +68,13 @@ public class User {
         updatedAt = LocalDateTime.now();
     }
 
-    public String getAuthorityName() {
+    @ManyToMany(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
+    @JoinTable(name = "users_roles",
+            joinColumns = @JoinColumn(name = "user_id", referencedColumnName = "id"),
+            inverseJoinColumns = @JoinColumn(name = "role_id", referencedColumnName = "id")
+    )
+    private Set<Role> roles;
 
-        if(authority != null){
-            return authority.name();
-        }
-        return "";
-    }
+
 
 }

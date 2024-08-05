@@ -2,5 +2,6 @@ package com.backend.banking_app.model.enumerations;
 
 public enum Authority {
     ADMIN,
-    CASHIER
+    USER,
+    MODERATOR
 }

@@ -9,6 +9,7 @@ import jakarta.validation.Valid;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 
 import java.math.BigDecimal;
@@ -29,6 +30,7 @@ public class AccountController {
     }
 
     //create account
+    @PreAuthorize("hasRole('ADMIN')")
     @PostMapping
     public ResponseEntity<SuccessResponse> createAccount(@Valid @RequestBody Account account) {
         log.debug("REST Request to create Account with account number {}", account.getAccountNumber());
