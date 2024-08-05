@@ -1,6 +1,7 @@
 package com.backend.banking_app.model;
 
 
+import com.backend.banking_app.model.enumerations.Authority;
 import com.backend.banking_app.model.enumerations.UserType;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
@@ -38,9 +39,9 @@ public class User {
     private String email;
 
     @NotBlank(message = "Phone number is required")
+    @Column(unique = true)
     private String phoneNumber;
 
-    @NotBlank(message = "Password is required")
     private String password;
 
     @NotNull(message = "Date of birth is required")
@@ -57,6 +58,9 @@ public class User {
     private LocalDateTime createdAt;
     private LocalDateTime updatedAt;
 
+    @Enumerated(EnumType.STRING)
+    private Authority authority;
+
     @PrePersist
     protected void onCreate() {
         createdAt = LocalDateTime.now();
@@ -67,5 +71,12 @@ public class User {
         updatedAt = LocalDateTime.now();
     }
 
+    public String getAuthorityName() {
+
+        if(authority != null){
+            return authority.name();
+        }
+        return "";
+    }
 
 }

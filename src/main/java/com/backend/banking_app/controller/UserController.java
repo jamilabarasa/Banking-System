@@ -9,6 +9,8 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.access.prepost.PreAuthorize;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -25,10 +27,12 @@ public class UserController {
         this.userService = userService;
     }
 
+
     //create user
     @PostMapping
     public ResponseEntity<SuccessResponse> createUser(@Valid @RequestBody User user){
         log.debug("REST request to register user {}",user.getEmail());
+
         userService.createUser(user);
         SuccessResponse successResponse = new SuccessResponse("User created successfully",201);
         return new ResponseEntity<>(successResponse, HttpStatus.CREATED);

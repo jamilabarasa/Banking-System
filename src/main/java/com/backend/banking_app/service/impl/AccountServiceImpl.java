@@ -162,7 +162,7 @@ public class AccountServiceImpl implements AccountService {
     @Transactional
     public void withdraw(Long accountId, BigDecimal amount) {
 
-        log.debug("Request to withdraw to account with ID: {}", accountId);
+        log.debug("Request to withdraw from account with ID: {}", accountId);
 
         //validate amount
         if (amount.compareTo(BigDecimal.valueOf(100)) <= 0) {

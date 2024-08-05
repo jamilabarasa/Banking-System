@@ -9,6 +9,7 @@ import com.backend.banking_app.repository.UserRepository;
 import com.backend.banking_app.service.UserService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -20,8 +21,8 @@ public class UserServiceImpl implements UserService {
 
     private UserRepository userRepository;
 
-//    @Autowired
-//    private PasswordEncoder passwordEncoder;
+    @Autowired
+    private PasswordEncoder passwordEncoder;
 
     @Autowired
     public UserServiceImpl(UserRepository userRepository) {
@@ -54,9 +55,12 @@ public class UserServiceImpl implements UserService {
             throw new BadRequestException("User exists with email: " + user.getEmail());
         }
 
-        //hash password
-        // Hash the password
-//        user.setPassword(passwordEncoder.encode(user.getPassword()));
+        if(user.getPassword() != null){
+            // Hash the password
+            user.setPassword(passwordEncoder.encode(user.getPassword()));
+
+        }
+
 
         return userRepository.save(user);
     }

@@ -28,7 +28,7 @@ public class Account {
     @Column(name = "user_id",nullable = false)
     private Long userId;
 
-    @NotNull(message = "AccountType Type is required")
+    @NotNull(message = "AccountType is required")
     @Enumerated(EnumType.STRING)
     @Column(nullable = false)
     private AccountType accountType;
