@@ -2137,3 +2137,72 @@ com.backend.banking_app.exceptions.ResourceNotFoundException: User does not exis
 2024-08-05T20:43:18.244+03:00  WARN 25354 --- [banking_app] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
 2024-08-05T20:43:20.761+03:00  INFO 25354 --- [banking_app] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9090 (http) with context path '/'
 2024-08-05T20:43:20.795+03:00  INFO 25354 --- [banking_app] [main] c.b.banking_app.BankingAppApplication    : Started BankingAppApplication in 14.241 seconds (process running for 15.046)
+2024-08-05T20:49:28.168+03:00  INFO 25354 --- [banking_app] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-08-05T20:49:28.175+03:00  INFO 25354 --- [banking_app] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-08-05T20:49:28.195+03:00  INFO 25354 --- [banking_app] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-08-05T20:49:38.204+03:00  INFO 25821 --- [banking_app] [main] c.b.banking_app.BankingAppApplication    : Starting BankingAppApplication using Java 17.0.12 with PID 25821 (/home/jamila/Documents/academy/banking_app/target/classes started by jamila in /home/jamila/Documents/academy/banking_app)
+2024-08-05T20:49:38.209+03:00 DEBUG 25821 --- [banking_app] [main] c.b.banking_app.BankingAppApplication    : Running with Spring Boot v3.3.2, Spring v6.1.11
+2024-08-05T20:49:38.211+03:00  INFO 25821 --- [banking_app] [main] c.b.banking_app.BankingAppApplication    : No active profile set, falling back to 1 default profile: "default"
+2024-08-05T20:49:40.364+03:00  INFO 25821 --- [banking_app] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-05T20:49:40.589+03:00  INFO 25821 --- [banking_app] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 206 ms. Found 8 JPA repository interfaces.
+2024-08-05T20:49:42.073+03:00  INFO 25821 --- [banking_app] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9090 (http)
+2024-08-05T20:49:42.099+03:00  INFO 25821 --- [banking_app] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-08-05T20:49:42.100+03:00  INFO 25821 --- [banking_app] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-08-05T20:49:42.238+03:00  INFO 25821 --- [banking_app] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-08-05T20:49:42.239+03:00  INFO 25821 --- [banking_app] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3891 ms
+2024-08-05T20:49:42.583+03:00  INFO 25821 --- [banking_app] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-05T20:49:42.699+03:00  INFO 25821 --- [banking_app] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-08-05T20:49:42.776+03:00  INFO 25821 --- [banking_app] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-08-05T20:49:43.499+03:00  INFO 25821 --- [banking_app] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-05T20:49:43.566+03:00  INFO 25821 --- [banking_app] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-08-05T20:49:44.286+03:00  INFO 25821 --- [banking_app] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5b3755f4
+2024-08-05T20:49:44.291+03:00  INFO 25821 --- [banking_app] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-08-05T20:49:47.213+03:00  INFO 25821 --- [banking_app] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-08-05T20:49:47.402+03:00  INFO 25821 --- [banking_app] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-05T20:49:48.233+03:00 DEBUG 25821 --- [banking_app] [main] c.b.b.s.jwt.JwtAuthenticationFilter      : Filter 'jwtAuthenticationFilter' configured for use
+2024-08-05T20:49:48.670+03:00  INFO 25821 --- [banking_app] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userDetailsServiceImpl
+2024-08-05T20:49:49.228+03:00  WARN 25821 --- [banking_app] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-05T20:49:51.654+03:00  INFO 25821 --- [banking_app] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9090 (http) with context path '/'
+2024-08-05T20:49:51.685+03:00  INFO 25821 --- [banking_app] [main] c.b.banking_app.BankingAppApplication    : Started BankingAppApplication in 14.682 seconds (process running for 15.481)
+2024-08-05T20:50:10.091+03:00  INFO 25821 --- [banking_app] [http-nio-9090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-05T20:50:10.092+03:00  INFO 25821 --- [banking_app] [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-08-05T20:50:10.096+03:00  INFO 25821 --- [banking_app] [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2024-08-05T20:50:11.042+03:00 DEBUG 25821 --- [banking_app] [http-nio-9090-exec-1] c.b.b.s.impl.UserDetailsServiceImpl      : User jamilabarasa2000@gmail.com ,password $2a$10$NL0bKJpK3KfZEX.IcIPwQOLk9hL71n/kflpy38Y.J673k6RORPm1e ,roles [ADMIN]
+2024-08-05T20:50:11.355+03:00 DEBUG 25821 --- [banking_app] [http-nio-9090-exec-1] c.b.b.controller.AuthController          : REQUEST to login user jamilabarasa2000@gmail.com
+2024-08-05T20:50:12.064+03:00 DEBUG 25821 --- [banking_app] [http-nio-9090-exec-1] c.b.b.s.impl.UserDetailsServiceImpl      : User jamilabarasa2000@gmail.com ,password $2a$10$NL0bKJpK3KfZEX.IcIPwQOLk9hL71n/kflpy38Y.J673k6RORPm1e ,roles [ADMIN]
+2024-08-05T20:50:42.771+03:00 DEBUG 25821 --- [banking_app] [http-nio-9090-exec-2] c.b.b.s.impl.UserDetailsServiceImpl      : User jamilabarasa2000@gmail.com ,password $2a$10$NL0bKJpK3KfZEX.IcIPwQOLk9hL71n/kflpy38Y.J673k6RORPm1e ,roles [ADMIN]
+2024-08-05T20:51:30.361+03:00 DEBUG 25821 --- [banking_app] [http-nio-9090-exec-4] c.b.b.s.impl.UserDetailsServiceImpl      : User jamilabarasa2000@gmail.com ,password $2a$10$NL0bKJpK3KfZEX.IcIPwQOLk9hL71n/kflpy38Y.J673k6RORPm1e ,roles [ADMIN]
+2024-08-05T20:54:32.690+03:00  INFO 25821 --- [banking_app] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-08-05T20:54:32.696+03:00  INFO 25821 --- [banking_app] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-08-05T20:54:32.715+03:00  INFO 25821 --- [banking_app] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-08-05T20:54:53.773+03:00  INFO 26227 --- [banking_app] [main] c.b.banking_app.BankingAppApplication    : Starting BankingAppApplication using Java 17.0.12 with PID 26227 (/home/jamila/Documents/academy/banking_app/target/classes started by jamila in /home/jamila/Documents/academy/banking_app)
+2024-08-05T20:54:53.778+03:00 DEBUG 26227 --- [banking_app] [main] c.b.banking_app.BankingAppApplication    : Running with Spring Boot v3.3.2, Spring v6.1.11
+2024-08-05T20:54:53.781+03:00  INFO 26227 --- [banking_app] [main] c.b.banking_app.BankingAppApplication    : No active profile set, falling back to 1 default profile: "default"
+2024-08-05T20:54:55.829+03:00  INFO 26227 --- [banking_app] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-05T20:54:56.032+03:00  INFO 26227 --- [banking_app] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 185 ms. Found 8 JPA repository interfaces.
+2024-08-05T20:54:57.571+03:00  INFO 26227 --- [banking_app] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9090 (http)
+2024-08-05T20:54:57.598+03:00  INFO 26227 --- [banking_app] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-08-05T20:54:57.599+03:00  INFO 26227 --- [banking_app] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-08-05T20:54:57.740+03:00  INFO 26227 --- [banking_app] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-08-05T20:54:57.742+03:00  INFO 26227 --- [banking_app] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3822 ms
+2024-08-05T20:54:58.106+03:00  INFO 26227 --- [banking_app] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-05T20:54:58.229+03:00  INFO 26227 --- [banking_app] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-08-05T20:54:58.319+03:00  INFO 26227 --- [banking_app] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-08-05T20:54:59.068+03:00  INFO 26227 --- [banking_app] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-05T20:54:59.132+03:00  INFO 26227 --- [banking_app] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-08-05T20:54:59.871+03:00  INFO 26227 --- [banking_app] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5dd747c1
+2024-08-05T20:54:59.876+03:00  INFO 26227 --- [banking_app] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-08-05T20:55:02.671+03:00  INFO 26227 --- [banking_app] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-08-05T20:55:02.840+03:00  INFO 26227 --- [banking_app] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-05T20:55:03.633+03:00 DEBUG 26227 --- [banking_app] [main] c.b.b.s.jwt.JwtAuthenticationFilter      : Filter 'jwtAuthenticationFilter' configured for use
+2024-08-05T20:55:04.050+03:00  INFO 26227 --- [banking_app] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userDetailsServiceImpl
+2024-08-05T20:55:04.594+03:00  WARN 26227 --- [banking_app] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-05T20:55:06.983+03:00  INFO 26227 --- [banking_app] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9090 (http) with context path '/'
+2024-08-05T20:55:07.015+03:00  INFO 26227 --- [banking_app] [main] c.b.banking_app.BankingAppApplication    : Started BankingAppApplication in 14.325 seconds (process running for 15.175)
+2024-08-05T20:55:26.602+03:00  INFO 26227 --- [banking_app] [http-nio-9090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-05T20:55:26.603+03:00  INFO 26227 --- [banking_app] [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-08-05T20:55:26.608+03:00  INFO 26227 --- [banking_app] [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2024-08-05T20:55:27.935+03:00 DEBUG 26227 --- [banking_app] [http-nio-9090-exec-1] c.b.b.controller.AccountController       : REST Request to create Account with account number 1111
+2024-08-05T20:55:27.950+03:00 DEBUG 26227 --- [banking_app] [http-nio-9090-exec-1] c.b.b.service.impl.AccountServiceImpl    : Request to save account 1111
+2024-08-05T20:55:28.083+03:00 DEBUG 26227 --- [banking_app] [http-nio-9090-exec-1] c.b.b.s.impl.NotificationServiceImpl     : Request to save notification Notification(id=null, userId=1, message=Account created successfully, notificationDate=2024-08-05T20:55:28.083301856)
+2024-08-05T20:55:28.115+03:00  INFO 26227 --- [banking_app] [http-nio-9090-exec-1] c.b.b.service.impl.AccountServiceImpl    : Account created successfully ,Account Id
